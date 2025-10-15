@@ -1,6 +1,9 @@
 Expense-Splitter 💸
 A sleek, modern desktop application for splitting group expenses, built entirely from the ground up with Java Swing. This project challenges the notion of outdated Java UIs by demonstrating how Swing can be leveraged to create a beautiful, minimalist, and highly functional application with a contemporary, dark-themed aesthetic.
 
+✨ Live Demo / Screenshot
+(Tip: To add a real screenshot, take a picture of your running app, upload it to a site like Imgur, get the "Direct Link", and paste it here.)
+
 🚀 Core Features
 Dynamic Group Creation: Start a new session by naming your group on launch.
 
@@ -17,8 +20,6 @@ Data Persistence: Save your entire group session—members and all expenses—to
 Modern UX: Enjoy a fluid user experience with features like "Enter-to-Add" for quick data entry.
 
 🎨 A Modern Take on Java Swing
-The entire user interface has been custom-built to provide an experience that feels modern and polished, moving far beyond the default look of Swing.
-
 Minimalist Dark Theme: A professional dark theme with a vibrant green accent color provides a clean, focused, and visually appealing workspace.
 
 Fully Custom Components: Features custom-painted JPanels, JTextFields, and JScrollBars with rounded corners for a soft, premium feel.
@@ -38,13 +39,7 @@ UI Framework: Java Swing
 
 Architecture:
 
-Model-View-Controller (MVC) Pattern: The project is structured with a clear separation of concerns:
-
-Model (model package): Plain Old Java Objects (POJOs) like Person, Group, and Expense that represent the application's data.
-
-View (gui & ui packages): All Swing components responsible for rendering the UI.
-
-Controller (Listeners & service package): Handles user input and the core business logic for calculations.
+Model-View-Controller (MVC) Pattern: The project is structured with a clear separation of concerns.
 
 Modular Design: The code is organized into distinct packages for UI, data models, business logic, and utilities.
 
@@ -54,8 +49,6 @@ Object-Oriented Programming (OOP)
 
 Custom Swing Component Painting
 
-Advanced Event Handling & Listeners
-
 Java Serialization for File I/O (Saving/Loading)
 
 📁 Project Structure
@@ -63,13 +56,13 @@ Expense-Splitter/
 └── src/
     └── com/
         └── expensesplitter/
-            ├── gui/           # Main UI panels (View)
-            ├── main/          # Application entry point
-            ├── model/         # Data classes (Model)
-            ├── service/       # Business logic (Controller)
-            ├── ui/            # UI theme, icons, and custom components
+            ├── gui/
+            ├── main/
+            ├── model/
+            ├── service/
+            ├── ui/
             │   └── components/
-            └── util/          # Utility classes (e.g., DataManager)
+            └── util/
 
 ⚙️ Getting Started
 To run this project locally, you will need Java Development Kit (JDK) 8 or newer.
@@ -78,15 +71,6 @@ Clone the repository:
 
 git clone [https://github.com/your-username/Expense-Splitter.git](https://github.com/your-username/Expense-Splitter.git)
 
-Navigate into the project directory:
+Open the project in any Java IDE (like VS Code or IntelliJ).
 
-cd Expense-Splitter
-
-Compile the code:
-(From inside the Expense-Splitter root folder)
-
-javac -d . src/com/expensesplitter/main/ExpenseSplitter.java
-
-Run the application:
-
-java com.expensesplitter.main.ExpenseSplitter
+Run the main method in src/com/expensesplitter/main/ExpenseSplitter.java.
